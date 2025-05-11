@@ -1,3 +1,5 @@
+## NAME: HARSHAT.G
+## REGNO.:212224040106
 # EX-16-LEFT-SHIFT-OPERATION
 ## AIM
 To write a C Program to perform the basic left shift operation for 44 integer number with 3 shifts.
@@ -10,16 +12,16 @@ To write a C Program to perform the basic left shift operation for 44 integer nu
 5.	Stop the program.
 
 ## PROGRAM
-
+```
+#include<stdio.h>
+int main(){
+    int a=44;
+    a=a<<3;
+    printf("After Left Shift Operation value of a is:%d",a);
+}
+```
 ## OUTPUT
-
-
-
-
-
-
-
-
+![437942543-f0698316-3bd1-4b5e-b7c0-06769988aea0](https://github.com/user-attachments/assets/89e2ab10-4501-4ac9-a19c-6ec1cf018893)
 
 ## RESULT
 Thus the program to perform the basic left shift operation for 44 integer number with 3 shifts has been executed successfully.
@@ -47,10 +49,27 @@ Write a C Program to check whether the two numbers are equal or not using simple
 5.	Stop the program.
 
 ## PROGRAM
+```
 
-
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    scanf("%d%d",&a,&b);
+    if(a==b)
+    {
+        printf("X is equal to Y");
+    }
+    else
+    {
+        printf("X is NOT equal to Y");
+    }
+    return 0;
+}
+```
 ## OUTPUT
-           
+![437941679-6d8f7a05-b84b-4964-bb3d-80d09438cb86](https://github.com/user-attachments/assets/9eaba861-005f-4606-a42c-b1f5d676b3f4)
+
 ## RESULT
 
 Thus the program to check whether the two numbers are equal or not using simple if statement has been executed successfully
@@ -70,12 +89,23 @@ Write a C Program to convert the given string into lowercase.
 5.	Stop the program.
 
 ## PROGRAM
-
+```
+#include<stdio.h>
+#include<ctype.h>
+int main()
+{
+    char str[100];
+    scanf("%s",str);
+    for(int i=0;str[i] != '\0';i++)
+    {
+        str[i] = tolower(str[i]);
+    }
+    printf("Lower case String is:%s",str);
+    return 0;
+}
+```
 ## OUTPUT
-
-
-
-
+![437941748-56e529b3-b03c-495a-bf4a-4ee5b170ec75](https://github.com/user-attachments/assets/659fc156-c809-434b-996d-c62afe97d490)
 ## RESULT
 Thus the program to convert the given string into lowercase has been executed successfully
  
@@ -95,12 +125,23 @@ Write a C Program to count the total number of words in a given string using do 
 6.	Stop the program.
 
 ## PROGRAM
-
+```
+#include<stdio.h>
+int main()
+{
+    char a[100];
+    int l=0;
+    fgets(a,sizeof(a),stdin);
+    while(a[l]!='\0')
+    {
+        l++;
+    }
+    printf("%d",l-1);
+    return 0;
+}
+```
 ## OUTPUT
-
-
-
-
+![437941807-9a3e9933-6eb7-493c-ad3f-22ca658d6ad0](https://github.com/user-attachments/assets/02883f6c-1c2e-4040-993f-7a25b3df09c4)
 
 ## RESULT
 Thus the program to count the total number of words in a given string using do While loop has been executed successfully
@@ -129,11 +170,29 @@ Step 7: After the loop, check the value of flag:
 Step 8: End the program.
 
 ## PROGRAM
-
-
+```
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char str[10];
+    char srt[10];
+    scanf("%s",str);
+    scanf("%s",srt);
+    int s = strcmp(str,srt);
+    if(s==0)
+    {
+        printf("strings are same");
+    }
+    else
+    {
+        printf("strings are not same");
+    }
+    return 0;
+}
+```
 ## OUTPUT
- 
-
+![437941854-2dd622da-c9e3-4943-8ab0-67e0b0fc4d86](https://github.com/user-attachments/assets/9b0456d7-67fb-4a1b-b53c-9d44c29db903)
 ## RESULT
 Thus the C Program to compare two strings without using strcmp() has been executed successfully.
 
